@@ -1,0 +1,39 @@
+<h2>Details</h2>
+<div *ngIf="user" class="row">
+
+  <div class="col-6">
+    <div class="form-floating mb-0">
+      <input type="text" readonly class="form-control-plaintext" [value]="user.id">
+      <label>ID</label>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="form-floating mb-0">
+      <input type="text" readonly class="form-control-plaintext" [value]="user.name">
+      <label>Name</label>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="form-floating mb-0">
+      <input type="text" readonly class="form-control-plaintext" [value]="user.email">
+      <label>Email</label>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="form-floating mb-0">
+      <input type="text" readonly class="form-control-plaintext" [value]="user.age">
+      <label>Age</label>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="form-floating mb-0">
+      <input type="text" readonly class="form-control-plaintext" [value]="user.phone">
+      <label>Phone</label>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,32 @@
+<h2>Details</h2>
+<div *ngIf="post" class="row">
+
+  <div class="col-6">
+    <div class="form-floating mb-0">
+      <input type="text" readonly class="form-control-plaintext" [value]="post.id">
+      <label>ID</label>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="form-floating mb-0">
+      <input type="date" readonly class="form-control-plaintext" [value]="post.date">
+      <label>Date</label>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="form-floating mb-0">
+      <textarea class="form-control-plaintext" style="height: 100px; text-align: justify;" readonly>{{post.title}}</textarea>
+      <label>Title</label>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="form-floating mb-0">
+      <textarea class="form-control-plaintext" style="height: 120px; text-align: justify;" readonly>{{post.description}}</textarea>
+      <label>Description</label>
+    </div>
+  </div>
+
+</div>

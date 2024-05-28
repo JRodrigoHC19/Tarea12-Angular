@@ -1,0 +1,9 @@
+<h2 class="mb-3">List</h2>
+<div class="list-group">
+  <a class="list-group-item list-group-item-action" (click)="getUser(user.id)" *ngFor="let user of users">
+    <div class="d-flex w-100 justify-content-between">
+      <h6 class="mb-1">{{user.email}}</h6>
+      <small class="mb-1">{{user.name}}</small>
+    </div>
+    </a>
+</div>
